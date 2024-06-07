@@ -40,9 +40,9 @@ Then fine-tune the main model by running the following command:
 
 ```bash
 # fine-tuning from plain T5
-python main.py --task component --model_path Langboat/mengzi-t5-base --pred_path outputs/component_42_mengzi-t5-base/preds.pt
+python main.py --task component --model_path Langboat/mengzi-t5-base --pred_path outputs/component_42_mengzi-t5-base/preds.pt --epochs 3
 # fine-tuning from continue pre-trained T5
-python main.py --task component --model_path Jumpy-pku/t5-recipe-continue-pretrained --pred_path outputs/component_42_t5-recipe-continue-pretrained/preds.pt
+python main.py --task component --model_path Jumpy-pku/t5-recipe-continue-pretrained --pred_path outputs/component_42_t5-recipe-continue-pretrained/preds.pt --epochs 3
 ```
 
 ## Citation
