@@ -51,7 +51,6 @@ class Evaluater:
                         input_ids=inputs["input_ids"], 
                         attention_mask=inputs["attention_mask"],
                         max_new_tokens=16,
-                        early_stopping=True,
                         num_beams=1
                     ).detach().cpu().numpy()
                     preds += [p.tolist() for p in pred]
